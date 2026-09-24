@@ -1,0 +1,131 @@
+.basket {
+    background-color: var(--color-second);
+    color: var(--color-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+aside > .basket {
+    position: sticky;
+    top: 120px;
+    border-radius: 30px 0 0 30px;
+    padding: 60px 40px;
+    width: 440px;
+    height: min(800px, calc(100vh - 80px));
+}
+
+.p-empty-basket {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-block-start: 0;
+    margin-block-end: 80px;
+}
+
+.choosen-energies-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-color: var(--color-medium) var(--color-second);
+    scrollbar-width: thin;
+}
+
+.choosen-energy-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-light);
+    color: var(--color-second);
+    margin-right: 8px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.choosen-energy-card-child-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40px;
+}
+
+.amount-control {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.money-calculation {
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    gap: 32px;
+    width: calc(100% - 20px);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td:nth-child(1),
+th:nth-child(1) {
+    text-align: left;
+}
+
+td:nth-last-child(1),
+th:nth-last-child(1) {
+    text-align: right;
+}
+
+th {
+    border-top: 3px solid var(--color-white);
+
+}
+
+@media screen and (max-width: 1279px) {
+    aside > .basket {
+        top: 80px;
+        padding: 50px 30px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .basket {
+        gap: 24px;
+    }
+
+    aside > .basket {
+        padding: 40px 20px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .basket {
+        gap: 16px;
+    }
+
+    aside > .basket {
+        display: none;
+    }
+
+    dialog > .basket {
+        border-radius: 30px 30px 0 0;
+        padding: 24px 16px;
+        max-height: calc(100vh - 60px);
+    }
+
+    .basket-dialog {
+        background-color: transparent;
+        justify-self: center;
+        align-self: flex-end;
+        margin-bottom: 60px;
+        border: none;
+        width: min(100%, 440px);
+    }
+}
