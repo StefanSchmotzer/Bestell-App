@@ -37,7 +37,7 @@ function templateEmptyBasket() {
                 </svg>
             </button>
             <h3>Your Basket</h3>
-            <p class="p-empty-basket">Nothing in your Basket?<br><br>Why?<br><br>The sun gives us Energy for free!<br><br>Look and choose some Energy Parts</p>
+            <p class="p-empty-basket"> is empty.<br><br>Why?<br><br>The sun gives us Energy for free!<br><br>Look and choose some Energy Parts</p>
             <img class=""
                 src="./assets/icons/basket.png" 
                 alt="basket-Icon">
@@ -143,7 +143,7 @@ function templateConfirmationDialog() {
                 Order confirmed!
             </span>
             <p class="p-confirmation-dialog">
-                Shipping process is started!
+                Shipping process has started!
             </p>
         </div>`
 }
