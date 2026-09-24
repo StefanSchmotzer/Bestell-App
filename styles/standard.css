@@ -1,0 +1,19 @@
+:root {
+    --color-white: #ffffff;
+    --color-dark: #03c95c; 
+    --color-stars: #facaac;
+    --color-medium: #e7c3ad;
+    --color-light: rgb(111, 224, 219);
+    --color-second: #081a00f3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.d-none {
+  display: none;
+}
