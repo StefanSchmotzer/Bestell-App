@@ -37,7 +37,7 @@ function templateEmptyBasket() {
                 </svg>
             </button>
             <h3>Your Basket</h3>
-            <p class="p-empty-basket">Hey why is it empty<br>Go ahead and order some Energy Parts!</p>
+            <p class="p-empty-basket">Nothing in your Basket?<br><br>Why?<br><br>The sun gives us Energy for free!<br><br>Look and choose some Energy Parts</p>
             <img class=""
                 src="../assets/icons/basket.png" 
                 alt="basket-Icon">
